@@ -222,6 +222,12 @@ video::-webkit-media-controls-enclosure {
 	scroll-snap-type: y proximity;
 }
 
+@media only screen and (max-width: 700px) {
+	.subpage-content {
+		scroll-snap-type: none;
+	}
+}
+
 .subpage-content img {
 	display: block;
 	margin: auto;
@@ -275,6 +281,38 @@ a:hover {
 	width:100%;
 }
 
+@media only screen and (max-width: 700px) {
+	.subpage-content.events {
+		scroll-snap-type: none;
+		width:100%;
+		height:100vh;
+		overflow:scroll;
+	  }
+	   
+	  .event {
+		scroll-snap-align: none;
+		height:100%;
+		width:100%;
+	  }
+	
+	
+	.subpage-content.radio {
+		scroll-snap-type: none;
+		width:100%;
+		height:100vh;
+		overflow:scroll;
+	  }
+	
+	.show {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: auto;
+		padding: 5px;
+		scroll-snap-align: none;
+		width:100%;
+	}
+}
 /*.one {
 	background-color:rgb(238, 249, 255);
 }
