@@ -1,8 +1,8 @@
 /* Add your colours and variables here */
 
 :root {
-	--brand-color:rgb(240, 98, 240);
-	--link-color: rgb(240, 98, 240);
+	--brand-color:rgb(0, 0, 0);
+	--link-color: rgb(0, 0, 0)
 	--heading-color: rgb(240, 98, 240);
 	--text-color:#333;
 	--brand-font:'Helvetica', 'Arial', sans-serif;
@@ -94,7 +94,7 @@ label {
 
 /* Page Styles */
 
-#about-slide, #events-slide, #pr-slide, #radio-slide, #workshops-slide, a, h1 {
+#about-slide, #events-slide, #pr-slide, #radio-slide, #workshops-slide, h1 {
   font-size: 1.5rem;
   color:var(--heading-color);
   font-family:var(--brand-font);
@@ -107,12 +107,12 @@ label {
 
 
 .css-selector {
-    background: linear-gradient(273deg, #80f1e3, #f9aee9, #d7fffb, #ded7f3);
+    background: linear-gradient(273deg, #e6e7e7, #fdefd8, #fff0db, #ffffff);
     background-size: 800% 800%;
-    -webkit-animation: AnimationName 19s ease infinite;
-    -moz-animation: AnimationName 19s ease infinite;
-    -o-animation: AnimationName 19s ease infinite;
-    animation: AnimationName 19s ease infinite;
+    -webkit-animation: AnimationName 20s ease infinite;
+    -moz-animation: AnimationName 20s ease infinite;
+    -o-animation: AnimationName 20s ease infinite;
+    animation: AnimationName 20s ease infinite;
 }
 @-webkit-keyframes AnimationName {
     0%{background-position:5% 0%}
@@ -155,21 +155,7 @@ label {
 	z-index: 10;
 }
 
-@media only screen and (max-width: 700px) {
-	#bg-change1 {
-	  bottom: 0;
-	  width: 100VW;
-	  height: 50VH;
-	}
 
-	h1 a{
-		font-size: 2.5rem;
-	}
-
-	a {
-		font-size: 1.6rem;
-	}
-  }
 
 #about-slide:hover ~ #bg-change1 {
     background: rgb(225,183,128) !important;
@@ -338,3 +324,20 @@ a:hover {
 	mix-blend-mode: multiply;
 
 }
+
+.main-content {
+  display: flex;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+
+
+
+  span {
+	mix-blend-mode:difference;;
+  }
